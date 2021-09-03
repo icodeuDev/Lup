@@ -4,9 +4,8 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.net.toUri
 import com.icodeu.lup.R
+import com.icodeu.lup.databinding.LupActivityMainBinding
 import com.icodeu.lup.repo.ErrorData
-import com.rohman.lup.databinding.LupActivityMainBinding
-
 
 class LupMainActivity() : AppCompatActivity(), DialogInterface {
     companion object {

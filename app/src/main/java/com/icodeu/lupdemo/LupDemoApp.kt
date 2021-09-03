@@ -9,13 +9,13 @@ class LupDemoApp : Application() {
         super.onCreate()
 
         val lup = Lup.Builder(this)
-            .showDefaultDialog("message","https://lup.id/report")
+            .showDefaultDialog("Oopss!","https://lup.id/report")
 //            .disableDialog()
             .addOnException { thread, throwable ->
                 doSomething()
                 throwable.printStackTrace()
             }
-            .restartAfterCrash(SecondActivity::class.java)
+//            .restartAfterCrash(SecondActivity::class.java)
             .build()
 
         lup.start()

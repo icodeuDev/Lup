@@ -7,8 +7,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.icodeu.lup.databinding.DialogLayoutBinding
 import com.icodeu.lup.repo.ErrorData
-import com.rohman.lup.databinding.DialogLayoutBinding
+
 
 class LupDialog(private val errorData: ErrorData, val reportUri: Uri, val dialogInterface: DialogInterface) : Fragment() {
     private lateinit var binding: DialogLayoutBinding
