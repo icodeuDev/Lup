@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Rohman/AndroidStudioProjects/LupDemo/app/src/main/res/layout/activity_main.xml" value="0.25885416666666666" />
+        <entry key="..\:/Users/Rohman/AndroidStudioProjects/LupDemo/app/src/main/res/layout/activity_second.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/Rohman/AndroidStudioProjects/LupDemo/lup/src/main/res/layout/activity_main.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/Rohman/AndroidStudioProjects/LupDemo/lup/src/main/res/layout/dialog_layout.xml" value="0.33" />
+        <entry key="..\:/Users/Rohman/AndroidStudioProjects/LupDemo/lup/src/main/res/layout/fragment_blank.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/Rohman/AndroidStudioProjects/LupDemo/lup/src/main/res/layout/lup_activity_main.xml" value="0.5076142131979695" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

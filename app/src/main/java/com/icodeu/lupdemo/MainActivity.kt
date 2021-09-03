@@ -1,0 +1,22 @@
+package com.icodeu.lupdemo
+
+import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import com.icodeu.lupdemo.databinding.ActivityMainBinding
+
+
+class MainActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMainBinding
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+
+        binding.buttonError.setOnClickListener {
+            throw NullPointerException("Opss! Something went wrong")
+        }
+    }
+
+}
