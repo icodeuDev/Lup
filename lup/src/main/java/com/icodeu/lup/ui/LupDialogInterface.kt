@@ -1,5 +1,5 @@
 package com.icodeu.lup.ui
 
-interface DialogInterface {
+interface LupDialogInterface {
     fun onReportClicked()
 }

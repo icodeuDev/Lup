@@ -80,9 +80,7 @@ class Lup private constructor(
 
 
     private fun exceptionHandler() {
-//        if (Thread.getDefaultUncaughtExceptionHandler() !is exceptionHandlerInstance) {
         Thread.setDefaultUncaughtExceptionHandler(exceptionHandlerInstance)
-//        }
         println("exceptionHandler: exception is set to (${Thread.getDefaultUncaughtExceptionHandler()})")
     }
 

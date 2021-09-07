@@ -7,7 +7,7 @@ import com.icodeu.lup.R
 import com.icodeu.lup.databinding.LupActivityMainBinding
 import com.icodeu.lup.repo.ErrorData
 
-class LupMainActivity() : AppCompatActivity(), DialogInterface {
+class LupMainActivity() : AppCompatActivity(), LupDialogInterface {
     companion object {
         const val INTENT_ERROR_KEY = "data"
         const val INTENT_URI_KEY = "uri"

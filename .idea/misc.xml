@@ -5,10 +5,14 @@
       <map>
         <entry key="..\:/Users/Rohman/AndroidStudioProjects/LupDemo/app/src/main/res/layout/activity_main.xml" value="0.25885416666666666" />
         <entry key="..\:/Users/Rohman/AndroidStudioProjects/LupDemo/app/src/main/res/layout/activity_second.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/Rohman/AndroidStudioProjects/LupDemo/lup/src/main/res/drawable/button_rounded.xml" value="0.2890625" />
+        <entry key="..\:/Users/Rohman/AndroidStudioProjects/LupDemo/lup/src/main/res/drawable/ic_copy.xml" value="0.2890625" />
         <entry key="..\:/Users/Rohman/AndroidStudioProjects/LupDemo/lup/src/main/res/layout/activity_main.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/Rohman/AndroidStudioProjects/LupDemo/lup/src/main/res/layout/copy_button.xml" value="0.9" />
         <entry key="..\:/Users/Rohman/AndroidStudioProjects/LupDemo/lup/src/main/res/layout/dialog_layout.xml" value="0.33" />
         <entry key="..\:/Users/Rohman/AndroidStudioProjects/LupDemo/lup/src/main/res/layout/fragment_blank.xml" value="0.27291666666666664" />
-        <entry key="..\:/Users/Rohman/AndroidStudioProjects/LupDemo/lup/src/main/res/layout/lup_activity_main.xml" value="0.5076142131979695" />
+        <entry key="..\:/Users/Rohman/AndroidStudioProjects/LupDemo/lup/src/main/res/layout/lup_activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/Rohman/AndroidStudioProjects/LupDemo/lup/src/main/res/layout/lup_dialog_layout.xml" value="0.33" />
       </map>
     </option>
   </component>

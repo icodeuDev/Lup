@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+
+            <TextView
+                android:id="@+id/errorTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Error..."
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+
+
+            <ScrollView
+                android:id="@+id/scrollview"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@id/errorTitle"
+                android:padding="16dp">
+                <TextView
+                    android:padding="16dp"
+                    android:id="@+id/errorText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:text="@string/error_text"
+                    android:textColor="@color/error_text"
+                    android:textSize="16sp" />
+            </ScrollView>
+
+            <include
+                android:id="@+id/buttonCopy"
+                layout="@layout/copy_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/errorTitle"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="25dp" />
+            <Button
+                android:id="@+id/buttonReport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/scrollview"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/button_rounded"
+                android:text="Report"
+                android:textColor="#FFFFFF" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

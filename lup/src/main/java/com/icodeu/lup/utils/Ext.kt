@@ -8,6 +8,7 @@ import android.content.pm.PackageManager
 import android.content.res.Configuration
 import android.os.Build
 import android.os.Environment
+import com.icodeu.lup.LubFactory
 import com.icodeu.lup.repo.ErrorData
 import com.icodeu.lup.ui.LupMainActivity
 import java.util.*
@@ -103,4 +104,8 @@ SD Card state: ${Environment.getExternalStorageState()}"""
 > $key = ${p.get(key)}"""
     }
     return s
+}
+
+fun Context.copyToClipboard(text:String){
+    LubFactory.getInstance().copyToCipboard(context = this,text)
 }

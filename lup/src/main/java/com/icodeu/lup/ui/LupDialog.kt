@@ -7,19 +7,20 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.icodeu.lup.databinding.DialogLayoutBinding
+import com.icodeu.lup.databinding.LupDialogLayoutBinding
 import com.icodeu.lup.repo.ErrorData
+import com.icodeu.lup.utils.copyToClipboard
 
 
-class LupDialog(private val errorData: ErrorData, val reportUri: Uri, val dialogInterface: DialogInterface) : Fragment() {
-    private lateinit var binding: DialogLayoutBinding
+class LupDialog(private val errorData: ErrorData, val reportUri: Uri, val dialogInterface: LupDialogInterface) : Fragment() {
+    private lateinit var binding: LupDialogLayoutBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = DialogLayoutBinding.inflate(inflater)
+        binding = LupDialogLayoutBinding.inflate(inflater)
         binding.lifecycleOwner = requireActivity()
         return (binding.root)
     }
@@ -32,6 +33,9 @@ class LupDialog(private val errorData: ErrorData, val reportUri: Uri, val dialog
             buttonReport.setOnClickListener {
                 startActivity(Intent(Intent.ACTION_VIEW, reportUri))
                 dialogInterface.onReportClicked()
+            }
+            buttonCopy.root.setOnClickListener {
+                requireContext().copyToClipboard(errorData.stacktrace)
             }
         }
 
