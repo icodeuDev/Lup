@@ -6,13 +6,14 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.icodeu.lup.databinding.LupDialogLayoutBinding
 import com.icodeu.lup.repo.ErrorData
 import com.icodeu.lup.utils.copyToClipboard
 
 
-class LupDialog(private val errorData: ErrorData, val reportUri: Uri, val dialogInterface: LupDialogInterface) : Fragment() {
+class LupDialog(private val errorData: ErrorData, val reportUri: Uri, private val dialogInterface: LupDialogInterface) : Fragment() {
     private lateinit var binding: LupDialogLayoutBinding
 
     override fun onCreateView(
@@ -36,6 +37,7 @@ class LupDialog(private val errorData: ErrorData, val reportUri: Uri, val dialog
             }
             buttonCopy.root.setOnClickListener {
                 requireContext().copyToClipboard(errorData.stacktrace)
+                Toast.makeText(requireActivity(),"Error text copied", Toast.LENGTH_LONG).show()
             }
         }
 
