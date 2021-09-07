@@ -5,7 +5,7 @@ that causes application stopped working (force close).
 Whiting this library included default dialog (look demo below) and of course
 you customize it, we will talk about that later..
 
-![demo](https://github.com/icodeuDev/blob/master/documentation/lup_demo.gif)
+![demo](https://github.com/icodeuDev/Lup/blob/master/documentation/lup_demo.gif)
 
 ## Download
 
