@@ -11,7 +11,7 @@ class ShowDefaultDialog(val context: Context, val message: String, val reportUrl
 
     override fun doOnExceptionListener(thread: Thread, throwable: Throwable) {
         val stackTrace = "${throwable.stackTraceToString()} \n" +
-                "-- Device Information --" +
+                "-- Device Information --\n" +
                 context.getInfosAboutDevice()
         context.intentTo(LupMainActivity::class.java, ErrorData(message,stackTrace), reportUrl)
     }

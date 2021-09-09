@@ -1,11 +1,12 @@
 # Introduction
 
-Lup is a small android library that can help you to tracking bug
-that causes application stopped working (force close).
-Whiting this library included default dialog (look demo below) and of course
-you customize it, we will talk about that later..
+Lup is a small android library that can help you to tracking bug that causes<br>
+application stopped working (force close). Whiting this library included default<br> dialog (look demo below) and of course you customize it, we will talk about that later..
+
+
 
 ![demo](https://github.com/icodeuDev/Lup/blob/master/documentation/lup_demo.gif)
+
 
 ## Requirements
 
@@ -39,14 +40,16 @@ dependencies {
 ### 1. Creating application class
 
 First thing you need to do is creating class that extending `Application()`.
-Then, define it in you `AndroidManifest.xml` <br>
+Then, define it in you `AndroidManifest.xml`
 
-```    <application
-    android:name="com.icodeu.lupdemo.LupDemoApp"
-    android:allowBackup="true"
-    android:icon="@mipmap/ic_launcher"
-    android:label="@string/app_name"
-    android:requestLegacyExternalStorage="true"
+
+```    
+    <application
+        android:name="com.icodeu.lupdemo.LupDemoApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
 ```
 
 ### 2. Creating `Lup` instance
@@ -76,10 +79,10 @@ Just call `.start()` (look the code above) method from `lup` instance you just c
 ## References
 
 ### Lup Builder
-
+```
 When creating `lup` instance, you can customize `lup` by it's builder.
 Here is all methods you can use in `builder`.
-
+```
 | Method | Description |
 | --- | --- |
 | .showDefaultDialog("Oopss!","https://forms.gle/2P4NXJZWMAfKhg538") | Customize dialog title and report Url |
