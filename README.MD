@@ -7,6 +7,12 @@ you customize it, we will talk about that later..
 
 ![demo](https://github.com/icodeuDev/Lup/blob/master/documentation/lup_demo.gif)
 
+## Requirements
+
+```
+    org.jetbrains.kotlin:kotlin-gradle-plugin >= 1.5.30
+```
+
 ## Download
 
 Add it in your root build.gradle at the end of repositories:
@@ -24,7 +30,7 @@ Step 2. Add the dependency
 
 ```	
 dependencies {
-	        implementation 'com.github.icodeuDev:Lup:0.2.0'
+	        implementation 'com.github.icodeuDev:Lup:0.2.1'
 	}
 ```
 
@@ -56,9 +62,8 @@ super.onCreate()
     val lup = Lup.Builder(this)
         .showDefaultDialog("Oopss!","https://forms.gle/2P4NXJZWMAfKhg538")
         .addOnException { thread, throwable ->
-        .doSomething()
+            .doSomething()
         }
-        .throwable.printStackTrace()
         .build()
 
         lup.start()
